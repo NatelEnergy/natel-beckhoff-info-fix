@@ -1,0 +1,4 @@
+.scroll-container{overflow:scroll !important;}
+.mCSB_container{overflow:visible !important;}
+.mCustomScrollBox{overflow:visible !important;}
+#mCSB_1_scrollbar_vertical{display:none !important;}

@@ -1,0 +1,22 @@
+{
+    "name": "Beckhoff Infofix",
+    "description": "Fix scrolling on Beckhoff infosys",
+    "version": "0.1",
+    "permissions": [
+        "tabs","<all_urls>"
+    ],
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+        "matches": [
+            "https://infosys.beckhoff.com/*"
+            ],
+        "js": ["content.js"],
+        "run_at": "document_end"
+        }
+    ], 
+    "web_accessible_resources": ["fix.css"],
+    "manifest_version": 2
+}
